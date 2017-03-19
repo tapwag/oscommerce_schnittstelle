@@ -1,7 +1,7 @@
 <?
 // $Id: confedit.php,v 1.6 2007/01/07
 if (!isset($_SERVER['PHP_AUTH_USER'])) {
-	Header("WWW-Authenticate: Basic realm=\"Configurations-Editor\"");
+	Header("WWW-Authenticate: Basic realm=\"Konfigurationseditor\"");
 	Header("HTTP/1.0 401 Unauthorized");
 	echo "Sie m&uuml;ssen sich autentifizieren\n";
 	exit;
@@ -15,7 +15,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
 	if ($_SERVER['PHP_AUTH_USER']<>$ERPftpuser || $_SERVER['PHP_AUTH_PW']<>$ERPftppwd) {
 		Header("WWW-Authenticate: Basic realm=\"My Realm\"");
 		Header("HTTP/1.0 401 Unauthorized");
-		echo "Sie m&uuml;ssen sich autentifizieren\n";
+		echo "Sie m&uuml;ssen sich authentifizieren\n";
 		exit;
 	}
 	require_once "DB.php";
