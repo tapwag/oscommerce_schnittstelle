@@ -1,9 +1,9 @@
-<?
+<?php 
 // $Id: confedit.php,v 1.6 2007/01/07
 if (!isset($_SERVER['PHP_AUTH_USER'])) {
 	Header("WWW-Authenticate: Basic realm=\"Konfigurationseditor\"");
 	Header("HTTP/1.0 401 Unauthorized");
-	echo "Sie m&uuml;ssen sich autentifizieren\n";
+	echo "Sie m&uuml;ssen sich authentifizieren\n";
 	exit;
 } else {
 	$login=($_GET["login"])?$_GET["login"]:$_POST["login"];
@@ -386,4 +386,4 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
 </center>
 </body>
 </html>
-<? } ?>
+<?php ?>
