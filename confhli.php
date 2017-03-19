@@ -1,9 +1,15 @@
 <?
 // Verbindung zur ERP-db
+
+// User which connects to the SQL Ledger database
 $ERPuser="lxoffice";
+// Password for the SQL Ledger database
 $ERPpass="geheim";
+// Datebbankserver where your SQL Ledger installation resides.
 $ERPhost="localhost";
+// Name of your SQL Ledger database
 $ERPdbname="stable";
+// This is a connect string which normally doesn't need to be changed
 $ERPdns="pgsql://$ERPuser:$ERPpass@$ERPhost/$ERPdbname";
 $ERPusr["Name"]="hli";
 $ERPusr["ID"]="376";
@@ -14,14 +20,21 @@ $ERPftphost="localhost";
 $ERPftpuser="oscom";
 $ERPftppwd="oscom";
 //Verbindung zur osCommerce-db
+
+// MySQL database username for your osCommerce installation
 $SHOPuser="root";
+// Databse password for the specitic user to connect to the osCommerce MySQL database
 $SHOPpass="db4web";
+// The host where your database server for osCommerce resides.
 $SHOPhost="localhost";
+// Database name of the osCommerce MySQL database
 $SHOPdbname="oscom";
 $SHOPlang="";
+// String to connect to the MySQL database, which normally doesn't need to be changed
 $SHOPdns="mysql://$SHOPuser:$SHOPpass@$SHOPhost/$SHOPdbname";
 $SHOPdir="tmp/shopartikel.csv";
-$SHOPimgdir="/var/www/oscommerce/images";
+// Absolute path where your article's images reside
+$SHOPimgdir="/var/www/htdocs/oscommerce/images";
 $SHOPftphost="localhost";
 $SHOPftpuser="oscom";
 $SHOPftppwd="oscom";
